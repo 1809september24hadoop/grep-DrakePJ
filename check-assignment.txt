@@ -1,0 +1,37 @@
+#!/bin/sh
+
+#1
+<grabcommand> 
+
+#2
+<grabcommand> 
+
+#3
+ANSWER3=$(<grabcommand> | wc -l)
+if [$ANSWER3 == 53]
+then
+  echo "Ques 3 correct"
+else
+  echo "Ques 3 ERROR, incorrect"
+
+#4
+<grabcommand> 
+
+#5
+<grabcommand> 
+
+#6
+<grabcommand> 
+
+#7
+<grabcommand> 
+
+#8
+<grabcommand> 
+
+#9
+<grabcommand> 
+
+#10
+<grabcommand> 
+
