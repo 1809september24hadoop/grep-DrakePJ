@@ -20,7 +20,13 @@ grep '^[^C]' cities.txt
 grep -E '^[^ ]{14,}$' cities.txt
 
 #7
-
 grep '^B' cities.txt
 
 #8
+
+
+#9
+grep -E '(.)(\1)$' cities.txt
+
+#10
+grep -E -i '^(.)(.).(\2)(\1)$' cities.txt
