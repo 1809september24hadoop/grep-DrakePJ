@@ -1,4 +1,8 @@
 #!/bin/sh
+cd "$(dirname "$0")"
+pwd
+ls -l
+echo
 
 #Answers:
 ANSWERS[0]=9
@@ -23,6 +27,6 @@ do
 		echo "Ques $CNT correct"
 	else
 		echo "Ques $CNT ERROR, incorrect"
-	done
-	CNT++
+	fi
+	((CNT++))
 done

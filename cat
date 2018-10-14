@@ -1,0 +1,1 @@
+rev cities.txt | awk '{print "^""$"}' | grep -i -f - cities.txt DrakePJ-grep-cmds.txt

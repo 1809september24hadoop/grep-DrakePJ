@@ -1,3 +1,5 @@
+#!/bin/sh
+
 #1
 grep '^Z' cities.txt
 
@@ -27,6 +29,3 @@ grep -E '(.)(\1)$' cities.txt
 
 #10
 grep -E -i '^(.)(.).(\2)(\1)$' cities.txt
-
-#11 (BONUS)
-rev cities.txt | awk '{print "^"$1"$"}' | grep -i -f - cities.txt
