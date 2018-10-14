@@ -17,10 +17,10 @@ grep '^[^C]' cities.txt
 grep -E '^[^ ]{14,}$' cities.txt
 
 #7
-grep '^B' cities.txt | wc -l
+grep -c '^B' cities.txt
 
 #8
-grep -o 'd' cities.txt | wc -l
+grep -c -o 'd' cities.txt
 
 #9
 grep -E '(.)(\1)$' cities.txt
